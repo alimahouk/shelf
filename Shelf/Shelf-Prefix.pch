@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Shelf' target in the 'Shelf' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #import <QuartzCore/QuartzCore.h>
+#endif

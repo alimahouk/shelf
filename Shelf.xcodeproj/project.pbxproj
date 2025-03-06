@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86110181170EB77200C0C18D /* SHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86110180170EB77200C0C18D /* SHView.m */; };
+		8611021D170F434D00C0C18D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8611021C170F434D00C0C18D /* QuartzCore.framework */; };
+		8611025C1710643900C0C18D /* TemplateProject_iphone.app in Resources */ = {isa = PBXBuildFile; fileRef = 8611025A1710643900C0C18D /* TemplateProject_iphone.app */; };
+		861102981710655600C0C18D /* TemplateProject_ipad.app in Resources */ = {isa = PBXBuildFile; fileRef = 861102971710655600C0C18D /* TemplateProject_ipad.app */; };
+		861102D41710665100C0C18D /* TemplateProject_universal.app in Resources */ = {isa = PBXBuildFile; fileRef = 861102D31710665100C0C18D /* TemplateProject_universal.app */; };
+		861102D61710667300C0C18D /* TemplateProject_osx.app in Resources */ = {isa = PBXBuildFile; fileRef = 861102D51710667300C0C18D /* TemplateProject_osx.app */; };
+		861102D917106BA900C0C18D /* SHProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 861102D817106BA900C0C18D /* SHProject.m */; };
+		861102DC171075A500C0C18D /* SHProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861102DB171075A500C0C18D /* SHProjectController.m */; };
+		8633EB47171455F300987FF6 /* hash_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB46171455F300987FF6 /* hash_bg@2x.png */; };
+		8633EB491714580D00987FF6 /* hash_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB481714580D00987FF6 /* hash_bg.png */; };
+		8633EB4C1714591300987FF6 /* list_view_shadow_upper.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB4A1714591300987FF6 /* list_view_shadow_upper.png */; };
+		8633EB4D1714591300987FF6 /* list_view_shadow_upper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB4B1714591300987FF6 /* list_view_shadow_upper@2x.png */; };
+		8633EB50171473AF00987FF6 /* list_view_shadow_lower.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB4E171473AF00987FF6 /* list_view_shadow_lower.png */; };
+		8633EB51171473AF00987FF6 /* list_view_shadow_lower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB4F171473AF00987FF6 /* list_view_shadow_lower@2x.png */; };
+		8633EB5C17157FC700987FF6 /* device_ipad_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB5217157FC600987FF6 /* device_ipad_black.png */; };
+		8633EB5D17157FC700987FF6 /* device_iphone_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB5317157FC600987FF6 /* device_iphone_black.png */; };
+		8633EB5E17157FC700987FF6 /* device_iphone_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB5417157FC600987FF6 /* device_iphone_white.png */; };
+		8633EB5F17157FC700987FF6 /* device_reflection_ipad_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB5517157FC600987FF6 /* device_reflection_ipad_black.png */; };
+		8633EB6017157FC700987FF6 /* device_reflection_iphone_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB5617157FC600987FF6 /* device_reflection_iphone_black.png */; };
+		8633EB6117157FC700987FF6 /* device_reflection_iphone_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB5717157FC600987FF6 /* device_reflection_iphone_white.png */; };
+		8633EB6217157FC700987FF6 /* glare_ipad_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB5817157FC600987FF6 /* glare_ipad_portrait.png */; };
+		8633EB6317157FC700987FF6 /* glare_iphone_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB5917157FC600987FF6 /* glare_iphone_portrait.png */; };
+		8633EB6417157FC700987FF6 /* device_shadow_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB5A17157FC600987FF6 /* device_shadow_ipad.png */; };
+		8633EB6517157FC700987FF6 /* device_shadow_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB5B17157FC700987FF6 /* device_shadow_iphone.png */; };
+		8633EB671715928D00987FF6 /* placeholder_iphone_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB661715928D00987FF6 /* placeholder_iphone_portrait.png */; };
+		8633EB69171595D800987FF6 /* placeholder_iphone_portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB68171595D800987FF6 /* placeholder_iphone_portrait@2x.png */; };
+		8633EB6C171595DF00987FF6 /* placeholder_iphone_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB6A171595DF00987FF6 /* placeholder_iphone_landscape.png */; };
+		8633EB6D171595DF00987FF6 /* placeholder_iphone_landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB6B171595DF00987FF6 /* placeholder_iphone_landscape@2x.png */; };
+		8633EB701717F38200987FF6 /* SHContainerBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633EB6F1717F38200987FF6 /* SHContainerBox.m */; };
+		8633EB761717F71300987FF6 /* SHProjectCollectionViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633EB751717F71300987FF6 /* SHProjectCollectionViewItem.m */; };
+		8633EB7F171A617E00987FF6 /* ContainerBoxPrototype.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB7D171A617E00987FF6 /* ContainerBoxPrototype.xib */; };
+		8633EB82171A698000987FF6 /* ThinImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633EB81171A697F00987FF6 /* ThinImageView.m */; };
+		8633EB85171A769700987FF6 /* YRKSpinningProgressIndicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633EB84171A769700987FF6 /* YRKSpinningProgressIndicatorLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8633EB88171B2D8F00987FF6 /* device_ipad_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB86171B2D8D00987FF6 /* device_ipad_white.png */; };
+		8633EB89171B2D8F00987FF6 /* device_reflection_ipad_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB87171B2D8E00987FF6 /* device_reflection_ipad_white.png */; };
+		8633EB8E171B37B800987FF6 /* placeholder_ipad_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB8A171B37B800987FF6 /* placeholder_ipad_landscape.png */; };
+		8633EB8F171B37B800987FF6 /* placeholder_ipad_landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB8B171B37B800987FF6 /* placeholder_ipad_landscape@2x.png */; };
+		8633EB90171B37B800987FF6 /* placeholder_ipad_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB8C171B37B800987FF6 /* placeholder_ipad_portrait.png */; };
+		8633EB91171B37B800987FF6 /* placeholder_ipad_portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB8D171B37B800987FF6 /* placeholder_ipad_portrait@2x.png */; };
+		8633EB96171B421D00987FF6 /* device_macbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB92171B421C00987FF6 /* device_macbook.png */; };
+		8633EB98171B421D00987FF6 /* device_shadow_macbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB94171B421C00987FF6 /* device_shadow_macbook.png */; };
+		8633EB99171B421D00987FF6 /* glare_macbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB95171B421D00987FF6 /* glare_macbook.png */; };
+		8633EB9C171B454E00987FF6 /* placeholder_macbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB9A171B454E00987FF6 /* placeholder_macbook.png */; };
+		8633EB9D171B454E00987FF6 /* placeholder_macbook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB9B171B454E00987FF6 /* placeholder_macbook@2x.png */; };
+		8633EBA3171C74A000987FF6 /* device_iphone_black_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB9E171C749C00987FF6 /* device_iphone_black_small.png */; };
+		8633EBA4171C74A000987FF6 /* device_iphone_white_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EB9F171C749C00987FF6 /* device_iphone_white_small.png */; };
+		8633EBA5171C74A000987FF6 /* device_reflection_iphone_black_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBA0171C749D00987FF6 /* device_reflection_iphone_black_small.png */; };
+		8633EBA6171C74A000987FF6 /* device_reflection_iphone_white_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBA1171C749E00987FF6 /* device_reflection_iphone_white_small.png */; };
+		8633EBA7171C74A000987FF6 /* glare_iphone_portrait_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBA2171C749F00987FF6 /* glare_iphone_portrait_small.png */; };
+		8633EBAA171C78C900987FF6 /* placeholder_iphone_portrait_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBA8171C78C900987FF6 /* placeholder_iphone_portrait_small.png */; };
+		8633EBAB171C78C900987FF6 /* placeholder_iphone_portrait_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBA9171C78C900987FF6 /* placeholder_iphone_portrait_small@2x.png */; };
+		8633EBAD171D46C500987FF6 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBAC171D46C100987FF6 /* Icon.icns */; };
+		8633EBC4171FC3C300987FF6 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633EBB3171FC3C300987FF6 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8633EBC5171FC3C300987FF6 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633EBB5171FC3C300987FF6 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8633EBC6171FC3C300987FF6 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633EBB7171FC3C300987FF6 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8633EBC7171FC3C300987FF6 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633EBB9171FC3C300987FF6 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8633EBC8171FC3C300987FF6 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633EBBB171FC3C300987FF6 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8633EBC9171FC3C300987FF6 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633EBBF171FC3C300987FF6 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8633EBCA171FC3C300987FF6 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8633EBC1171FC3C300987FF6 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8633EBCE171FC46D00987FF6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8633EBCD171FC46C00987FF6 /* SystemConfiguration.framework */; };
+		8633EBD0171FC48400987FF6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8633EBCF171FC48400987FF6 /* libz.dylib */; };
+		8633EBD2171FC4A200987FF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8633EBD1171FC4A100987FF6 /* CoreGraphics.framework */; };
+		8633EBD4171FC4BD00987FF6 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8633EBD3171FC4BC00987FF6 /* CoreServices.framework */; };
+		8633EBDC171FCB8B00987FF6 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8633EBDB171FCB8B00987FF6 /* ApplicationServices.framework */; };
+		8633EBEF171FEFEE00987FF6 /* device_ipad_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBDD171FEFE300987FF6 /* device_ipad_black@2x.png */; };
+		8633EBF0171FEFEE00987FF6 /* device_ipad_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBDE171FEFE500987FF6 /* device_ipad_white@2x.png */; };
+		8633EBF1171FEFEE00987FF6 /* device_iphone_black_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBDF171FEFE600987FF6 /* device_iphone_black_small@2x.png */; };
+		8633EBF2171FEFEE00987FF6 /* device_iphone_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBE0171FEFE800987FF6 /* device_iphone_black@2x.png */; };
+		8633EBF3171FEFEE00987FF6 /* device_iphone_white_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBE1171FEFE900987FF6 /* device_iphone_white_small@2x.png */; };
+		8633EBF4171FEFEE00987FF6 /* device_iphone_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBE2171FEFEA00987FF6 /* device_iphone_white@2x.png */; };
+		8633EBF5171FEFEE00987FF6 /* device_macbook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBE3171FEFEA00987FF6 /* device_macbook@2x.png */; };
+		8633EBF6171FEFEE00987FF6 /* device_reflection_ipad_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBE4171FEFEA00987FF6 /* device_reflection_ipad_black@2x.png */; };
+		8633EBF7171FEFEE00987FF6 /* device_reflection_ipad_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBE5171FEFEA00987FF6 /* device_reflection_ipad_white@2x.png */; };
+		8633EBF8171FEFEE00987FF6 /* device_reflection_iphone_black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBE6171FEFEA00987FF6 /* device_reflection_iphone_black@2x.png */; };
+		8633EBF9171FEFEE00987FF6 /* device_reflection_iphone_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBE7171FEFEB00987FF6 /* device_reflection_iphone_white@2x.png */; };
+		8633EBFA171FEFEE00987FF6 /* device_shadow_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBE8171FEFEB00987FF6 /* device_shadow_ipad@2x.png */; };
+		8633EBFB171FEFEE00987FF6 /* device_shadow_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBE9171FEFEB00987FF6 /* device_shadow_iphone@2x.png */; };
+		8633EBFC171FEFEE00987FF6 /* device_shadow_macbook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBEA171FEFEC00987FF6 /* device_shadow_macbook@2x.png */; };
+		8633EBFD171FEFEE00987FF6 /* glare_ipad_portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBEB171FEFEC00987FF6 /* glare_ipad_portrait@2x.png */; };
+		8633EBFE171FEFEE00987FF6 /* glare_iphone_portrait_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBEC171FEFEC00987FF6 /* glare_iphone_portrait_small@2x.png */; };
+		8633EBFF171FEFEE00987FF6 /* glare_iphone_portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBED171FEFED00987FF6 /* glare_iphone_portrait@2x.png */; };
+		8633EC00171FEFEE00987FF6 /* glare_macbook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8633EBEE171FEFED00987FF6 /* glare_macbook@2x.png */; };
+		86A894E716F9879A006DC0FC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A894E616F9879A006DC0FC /* Cocoa.framework */; };
+		86A894F116F9879A006DC0FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86A894EF16F9879A006DC0FC /* InfoPlist.strings */; };
+		86A894F316F9879A006DC0FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A894F216F9879A006DC0FC /* main.m */; };
+		86A894F716F9879A006DC0FC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 86A894F516F9879A006DC0FC /* Credits.rtf */; };
+		86A894FD16F9879A006DC0FC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86A894FB16F9879A006DC0FC /* MainMenu.xib */; };
+		86A8950016F9879A006DC0FC /* Shelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86A894FE16F9879A006DC0FC /* Shelf.xcdatamodeld */; };
+		86A8951116FD76AB006DC0FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A8950A16FD76AB006DC0FC /* AppDelegate.m */; };
+		86A8951416FD76F5006DC0FC /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A8951316FD76F5006DC0FC /* Project.m */; };
+		86A8951716FD8088006DC0FC /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A8951616FD8088006DC0FC /* AppController.m */; };
+		86A8951A16FE0FEF006DC0FC /* SHProjectCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A8951916FE0FEF006DC0FC /* SHProjectCollectionView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8611017F170EB77200C0C18D /* SHView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHView.h; sourceTree = "<group>"; };
+		86110180170EB77200C0C18D /* SHView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHView.m; sourceTree = "<group>"; };
+		8611021C170F434D00C0C18D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8611025A1710643900C0C18D /* TemplateProject_iphone.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = TemplateProject_iphone.app; path = Shelf/TemplateProject_iphone.app; sourceTree = SOURCE_ROOT; };
+		861102971710655600C0C18D /* TemplateProject_ipad.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = TemplateProject_ipad.app; path = Shelf/TemplateProject_ipad.app; sourceTree = SOURCE_ROOT; };
+		861102D31710665100C0C18D /* TemplateProject_universal.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = TemplateProject_universal.app; path = Shelf/TemplateProject_universal.app; sourceTree = SOURCE_ROOT; };
+		861102D51710667300C0C18D /* TemplateProject_osx.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = TemplateProject_osx.app; path = Shelf/TemplateProject_osx.app; sourceTree = SOURCE_ROOT; };
+		861102D717106BA900C0C18D /* SHProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHProject.h; sourceTree = "<group>"; };
+		861102D817106BA900C0C18D /* SHProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHProject.m; sourceTree = "<group>"; };
+		861102DA171075A500C0C18D /* SHProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHProjectController.h; sourceTree = "<group>"; };
+		861102DB171075A500C0C18D /* SHProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHProjectController.m; sourceTree = "<group>"; };
+		8633EB46171455F300987FF6 /* hash_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hash_bg@2x.png"; sourceTree = "<group>"; };
+		8633EB481714580D00987FF6 /* hash_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hash_bg.png; sourceTree = "<group>"; };
+		8633EB4A1714591300987FF6 /* list_view_shadow_upper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_view_shadow_upper.png; sourceTree = "<group>"; };
+		8633EB4B1714591300987FF6 /* list_view_shadow_upper@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_view_shadow_upper@2x.png"; sourceTree = "<group>"; };
+		8633EB4E171473AF00987FF6 /* list_view_shadow_lower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_view_shadow_lower.png; sourceTree = "<group>"; };
+		8633EB4F171473AF00987FF6 /* list_view_shadow_lower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_view_shadow_lower@2x.png"; sourceTree = "<group>"; };
+		8633EB5217157FC600987FF6 /* device_ipad_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_ipad_black.png; sourceTree = "<group>"; };
+		8633EB5317157FC600987FF6 /* device_iphone_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_iphone_black.png; sourceTree = "<group>"; };
+		8633EB5417157FC600987FF6 /* device_iphone_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_iphone_white.png; sourceTree = "<group>"; };
+		8633EB5517157FC600987FF6 /* device_reflection_ipad_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_reflection_ipad_black.png; sourceTree = "<group>"; };
+		8633EB5617157FC600987FF6 /* device_reflection_iphone_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_reflection_iphone_black.png; sourceTree = "<group>"; };
+		8633EB5717157FC600987FF6 /* device_reflection_iphone_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_reflection_iphone_white.png; sourceTree = "<group>"; };
+		8633EB5817157FC600987FF6 /* glare_ipad_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glare_ipad_portrait.png; sourceTree = "<group>"; };
+		8633EB5917157FC600987FF6 /* glare_iphone_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glare_iphone_portrait.png; sourceTree = "<group>"; };
+		8633EB5A17157FC600987FF6 /* device_shadow_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_shadow_ipad.png; sourceTree = "<group>"; };
+		8633EB5B17157FC700987FF6 /* device_shadow_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_shadow_iphone.png; sourceTree = "<group>"; };
+		8633EB661715928D00987FF6 /* placeholder_iphone_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_iphone_portrait.png; sourceTree = "<group>"; };
+		8633EB68171595D800987FF6 /* placeholder_iphone_portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_iphone_portrait@2x.png"; sourceTree = "<group>"; };
+		8633EB6A171595DF00987FF6 /* placeholder_iphone_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_iphone_landscape.png; sourceTree = "<group>"; };
+		8633EB6B171595DF00987FF6 /* placeholder_iphone_landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_iphone_landscape@2x.png"; sourceTree = "<group>"; };
+		8633EB6E1717F38100987FF6 /* SHContainerBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHContainerBox.h; sourceTree = "<group>"; };
+		8633EB6F1717F38200987FF6 /* SHContainerBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHContainerBox.m; sourceTree = "<group>"; };
+		8633EB741717F71300987FF6 /* SHProjectCollectionViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHProjectCollectionViewItem.h; sourceTree = "<group>"; };
+		8633EB751717F71300987FF6 /* SHProjectCollectionViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHProjectCollectionViewItem.m; sourceTree = "<group>"; };
+		8633EB7E171A617E00987FF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ContainerBoxPrototype.xib; sourceTree = "<group>"; };
+		8633EB80171A697F00987FF6 /* ThinImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThinImageView.h; sourceTree = "<group>"; };
+		8633EB81171A697F00987FF6 /* ThinImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThinImageView.m; sourceTree = "<group>"; };
+		8633EB83171A769700987FF6 /* YRKSpinningProgressIndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRKSpinningProgressIndicatorLayer.h; sourceTree = "<group>"; };
+		8633EB84171A769700987FF6 /* YRKSpinningProgressIndicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRKSpinningProgressIndicatorLayer.m; sourceTree = "<group>"; };
+		8633EB86171B2D8D00987FF6 /* device_ipad_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_ipad_white.png; sourceTree = "<group>"; };
+		8633EB87171B2D8E00987FF6 /* device_reflection_ipad_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_reflection_ipad_white.png; sourceTree = "<group>"; };
+		8633EB8A171B37B800987FF6 /* placeholder_ipad_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_ipad_landscape.png; sourceTree = "<group>"; };
+		8633EB8B171B37B800987FF6 /* placeholder_ipad_landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_ipad_landscape@2x.png"; sourceTree = "<group>"; };
+		8633EB8C171B37B800987FF6 /* placeholder_ipad_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_ipad_portrait.png; sourceTree = "<group>"; };
+		8633EB8D171B37B800987FF6 /* placeholder_ipad_portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_ipad_portrait@2x.png"; sourceTree = "<group>"; };
+		8633EB92171B421C00987FF6 /* device_macbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_macbook.png; sourceTree = "<group>"; };
+		8633EB94171B421C00987FF6 /* device_shadow_macbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_shadow_macbook.png; sourceTree = "<group>"; };
+		8633EB95171B421D00987FF6 /* glare_macbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glare_macbook.png; sourceTree = "<group>"; };
+		8633EB9A171B454E00987FF6 /* placeholder_macbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_macbook.png; sourceTree = "<group>"; };
+		8633EB9B171B454E00987FF6 /* placeholder_macbook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_macbook@2x.png"; sourceTree = "<group>"; };
+		8633EB9E171C749C00987FF6 /* device_iphone_black_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_iphone_black_small.png; sourceTree = "<group>"; };
+		8633EB9F171C749C00987FF6 /* device_iphone_white_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_iphone_white_small.png; sourceTree = "<group>"; };
+		8633EBA0171C749D00987FF6 /* device_reflection_iphone_black_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_reflection_iphone_black_small.png; sourceTree = "<group>"; };
+		8633EBA1171C749E00987FF6 /* device_reflection_iphone_white_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = device_reflection_iphone_white_small.png; sourceTree = "<group>"; };
+		8633EBA2171C749F00987FF6 /* glare_iphone_portrait_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glare_iphone_portrait_small.png; sourceTree = "<group>"; };
+		8633EBA8171C78C900987FF6 /* placeholder_iphone_portrait_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_iphone_portrait_small.png; sourceTree = "<group>"; };
+		8633EBA9171C78C900987FF6 /* placeholder_iphone_portrait_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_iphone_portrait_small@2x.png"; sourceTree = "<group>"; };
+		8633EBAC171D46C100987FF6 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		8633EBB1171FC3C300987FF6 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		8633EBB2171FC3C300987FF6 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		8633EBB3171FC3C300987FF6 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		8633EBB4171FC3C300987FF6 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		8633EBB5171FC3C300987FF6 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		8633EBB6171FC3C300987FF6 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		8633EBB7171FC3C300987FF6 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		8633EBB8171FC3C300987FF6 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		8633EBB9171FC3C300987FF6 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		8633EBBA171FC3C300987FF6 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		8633EBBB171FC3C300987FF6 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		8633EBBC171FC3C300987FF6 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		8633EBBD171FC3C300987FF6 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		8633EBBE171FC3C300987FF6 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		8633EBBF171FC3C300987FF6 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		8633EBC0171FC3C300987FF6 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		8633EBC1171FC3C300987FF6 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		8633EBC2171FC3C300987FF6 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		8633EBCB171FC43600987FF6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8633EBCD171FC46C00987FF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8633EBCF171FC48400987FF6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8633EBD1171FC4A100987FF6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8633EBD3171FC4BC00987FF6 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		8633EBDB171FCB8B00987FF6 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		8633EBDD171FEFE300987FF6 /* device_ipad_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_ipad_black@2x.png"; sourceTree = "<group>"; };
+		8633EBDE171FEFE500987FF6 /* device_ipad_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_ipad_white@2x.png"; sourceTree = "<group>"; };
+		8633EBDF171FEFE600987FF6 /* device_iphone_black_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_iphone_black_small@2x.png"; sourceTree = "<group>"; };
+		8633EBE0171FEFE800987FF6 /* device_iphone_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_iphone_black@2x.png"; sourceTree = "<group>"; };
+		8633EBE1171FEFE900987FF6 /* device_iphone_white_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_iphone_white_small@2x.png"; sourceTree = "<group>"; };
+		8633EBE2171FEFEA00987FF6 /* device_iphone_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_iphone_white@2x.png"; sourceTree = "<group>"; };
+		8633EBE3171FEFEA00987FF6 /* device_macbook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_macbook@2x.png"; sourceTree = "<group>"; };
+		8633EBE4171FEFEA00987FF6 /* device_reflection_ipad_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_reflection_ipad_black@2x.png"; sourceTree = "<group>"; };
+		8633EBE5171FEFEA00987FF6 /* device_reflection_ipad_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_reflection_ipad_white@2x.png"; sourceTree = "<group>"; };
+		8633EBE6171FEFEA00987FF6 /* device_reflection_iphone_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_reflection_iphone_black@2x.png"; sourceTree = "<group>"; };
+		8633EBE7171FEFEB00987FF6 /* device_reflection_iphone_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_reflection_iphone_white@2x.png"; sourceTree = "<group>"; };
+		8633EBE8171FEFEB00987FF6 /* device_shadow_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_shadow_ipad@2x.png"; sourceTree = "<group>"; };
+		8633EBE9171FEFEB00987FF6 /* device_shadow_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_shadow_iphone@2x.png"; sourceTree = "<group>"; };
+		8633EBEA171FEFEC00987FF6 /* device_shadow_macbook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "device_shadow_macbook@2x.png"; sourceTree = "<group>"; };
+		8633EBEB171FEFEC00987FF6 /* glare_ipad_portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glare_ipad_portrait@2x.png"; sourceTree = "<group>"; };
+		8633EBEC171FEFEC00987FF6 /* glare_iphone_portrait_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glare_iphone_portrait_small@2x.png"; sourceTree = "<group>"; };
+		8633EBED171FEFED00987FF6 /* glare_iphone_portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glare_iphone_portrait@2x.png"; sourceTree = "<group>"; };
+		8633EBEE171FEFED00987FF6 /* glare_macbook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glare_macbook@2x.png"; sourceTree = "<group>"; };
+		8633EC031721997E00987FF6 /* Shelf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Shelf.entitlements; sourceTree = "<group>"; };
+		86A894E316F9879A006DC0FC /* Shelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A894E616F9879A006DC0FC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		86A894E916F9879A006DC0FC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		86A894EA16F9879A006DC0FC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		86A894EB16F9879A006DC0FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		86A894EE16F9879A006DC0FC /* Shelf-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shelf-Info.plist"; sourceTree = "<group>"; };
+		86A894F016F9879A006DC0FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86A894F216F9879A006DC0FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86A894F416F9879A006DC0FC /* Shelf-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shelf-Prefix.pch"; sourceTree = "<group>"; };
+		86A894F616F9879A006DC0FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		86A894FC16F9879A006DC0FC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		86A894FF16F9879A006DC0FC /* Shelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shelf.xcdatamodel; sourceTree = "<group>"; };
+		86A8950916FD76AB006DC0FC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		86A8950A16FD76AB006DC0FC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		86A8951216FD76F5006DC0FC /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		86A8951316FD76F5006DC0FC /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		86A8951516FD8088006DC0FC /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		86A8951616FD8088006DC0FC /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		86A8951816FE0FEF006DC0FC /* SHProjectCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHProjectCollectionView.h; sourceTree = "<group>"; };
+		86A8951916FE0FEF006DC0FC /* SHProjectCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHProjectCollectionView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86A894E016F9879A006DC0FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8633EBDC171FCB8B00987FF6 /* ApplicationServices.framework in Frameworks */,
+				8633EBD4171FC4BD00987FF6 /* CoreServices.framework in Frameworks */,
+				8633EBD2171FC4A200987FF6 /* CoreGraphics.framework in Frameworks */,
+				8633EBD0171FC48400987FF6 /* libz.dylib in Frameworks */,
+				8633EBCE171FC46D00987FF6 /* SystemConfiguration.framework in Frameworks */,
+				8611021D170F434D00C0C18D /* QuartzCore.framework in Frameworks */,
+				86A894E716F9879A006DC0FC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8633EBAE171FC3C300987FF6 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				8633EBB1171FC3C300987FF6 /* ASICacheDelegate.h */,
+				8633EBB2171FC3C300987FF6 /* ASIDataCompressor.h */,
+				8633EBB3171FC3C300987FF6 /* ASIDataCompressor.m */,
+				8633EBB4171FC3C300987FF6 /* ASIDataDecompressor.h */,
+				8633EBB5171FC3C300987FF6 /* ASIDataDecompressor.m */,
+				8633EBB6171FC3C300987FF6 /* ASIDownloadCache.h */,
+				8633EBB7171FC3C300987FF6 /* ASIDownloadCache.m */,
+				8633EBB8171FC3C300987FF6 /* ASIFormDataRequest.h */,
+				8633EBB9171FC3C300987FF6 /* ASIFormDataRequest.m */,
+				8633EBBA171FC3C300987FF6 /* ASIHTTPRequest.h */,
+				8633EBBB171FC3C300987FF6 /* ASIHTTPRequest.m */,
+				8633EBBC171FC3C300987FF6 /* ASIHTTPRequestConfig.h */,
+				8633EBBD171FC3C300987FF6 /* ASIHTTPRequestDelegate.h */,
+				8633EBBE171FC3C300987FF6 /* ASIInputStream.h */,
+				8633EBBF171FC3C300987FF6 /* ASIInputStream.m */,
+				8633EBC0171FC3C300987FF6 /* ASINetworkQueue.h */,
+				8633EBC1171FC3C300987FF6 /* ASINetworkQueue.m */,
+				8633EBC2171FC3C300987FF6 /* ASIProgressDelegate.h */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		86A894DA16F98799006DC0FC = {
+			isa = PBXGroup;
+			children = (
+				86A894EC16F9879A006DC0FC /* Shelf */,
+				86A894E516F9879A006DC0FC /* Frameworks */,
+				86A894E416F9879A006DC0FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86A894E416F9879A006DC0FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86A894E316F9879A006DC0FC /* Shelf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86A894E516F9879A006DC0FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8633EBDB171FCB8B00987FF6 /* ApplicationServices.framework */,
+				8633EBCF171FC48400987FF6 /* libz.dylib */,
+				8633EBD3171FC4BC00987FF6 /* CoreServices.framework */,
+				8633EBD1171FC4A100987FF6 /* CoreGraphics.framework */,
+				8633EBCD171FC46C00987FF6 /* SystemConfiguration.framework */,
+				8633EBCB171FC43600987FF6 /* CFNetwork.framework */,
+				8611021C170F434D00C0C18D /* QuartzCore.framework */,
+				86A894E616F9879A006DC0FC /* Cocoa.framework */,
+				86A894E816F9879A006DC0FC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86A894E816F9879A006DC0FC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86A894E916F9879A006DC0FC /* AppKit.framework */,
+				86A894EA16F9879A006DC0FC /* CoreData.framework */,
+				86A894EB16F9879A006DC0FC /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		86A894EC16F9879A006DC0FC /* Shelf */ = {
+			isa = PBXGroup;
+			children = (
+				8633EC031721997E00987FF6 /* Shelf.entitlements */,
+				86A894FE16F9879A006DC0FC /* Shelf.xcdatamodeld */,
+				86A8950E16FD76AB006DC0FC /* Resources */,
+				86A8950716FD76AB006DC0FC /* Classes */,
+				86A894ED16F9879A006DC0FC /* Supporting Files */,
+			);
+			path = Shelf;
+			sourceTree = "<group>";
+		};
+		86A894ED16F9879A006DC0FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86A894EE16F9879A006DC0FC /* Shelf-Info.plist */,
+				86A894EF16F9879A006DC0FC /* InfoPlist.strings */,
+				86A894F216F9879A006DC0FC /* main.m */,
+				86A894F416F9879A006DC0FC /* Shelf-Prefix.pch */,
+				86A894F516F9879A006DC0FC /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86A8950616F98D00006DC0FC /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				86A894FB16F9879A006DC0FC /* MainMenu.xib */,
+				8633EB7D171A617E00987FF6 /* ContainerBoxPrototype.xib */,
+			);
+			name = NIBs;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		86A8950716FD76AB006DC0FC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				86A8950816FD76AB006DC0FC /* AppDelegate */,
+				86A8950B16FD76AB006DC0FC /* AppSupport */,
+				86A8950C16FD76AB006DC0FC /* Categories */,
+				86A8950D16FD76AB006DC0FC /* Controllers */,
+				86A8951216FD76F5006DC0FC /* Project.h */,
+				86A8951316FD76F5006DC0FC /* Project.m */,
+				8633EB6E1717F38100987FF6 /* SHContainerBox.h */,
+				8633EB6F1717F38200987FF6 /* SHContainerBox.m */,
+				861102D717106BA900C0C18D /* SHProject.h */,
+				861102D817106BA900C0C18D /* SHProject.m */,
+				86A8951816FE0FEF006DC0FC /* SHProjectCollectionView.h */,
+				86A8951916FE0FEF006DC0FC /* SHProjectCollectionView.m */,
+				8633EB741717F71300987FF6 /* SHProjectCollectionViewItem.h */,
+				8633EB751717F71300987FF6 /* SHProjectCollectionViewItem.m */,
+				8611017F170EB77200C0C18D /* SHView.h */,
+				86110180170EB77200C0C18D /* SHView.m */,
+				8633EB80171A697F00987FF6 /* ThinImageView.h */,
+				8633EB81171A697F00987FF6 /* ThinImageView.m */,
+				861102971710655600C0C18D /* TemplateProject_ipad.app */,
+				8611025A1710643900C0C18D /* TemplateProject_iphone.app */,
+				861102D51710667300C0C18D /* TemplateProject_osx.app */,
+				861102D31710665100C0C18D /* TemplateProject_universal.app */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		86A8950816FD76AB006DC0FC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				86A8950916FD76AB006DC0FC /* AppDelegate.h */,
+				86A8950A16FD76AB006DC0FC /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		86A8950B16FD76AB006DC0FC /* AppSupport */ = {
+			isa = PBXGroup;
+			children = (
+				8633EBAE171FC3C300987FF6 /* ASIHTTPRequest */,
+				8633EB83171A769700987FF6 /* YRKSpinningProgressIndicatorLayer.h */,
+				8633EB84171A769700987FF6 /* YRKSpinningProgressIndicatorLayer.m */,
+			);
+			path = AppSupport;
+			sourceTree = "<group>";
+		};
+		86A8950C16FD76AB006DC0FC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		86A8950D16FD76AB006DC0FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86A8951516FD8088006DC0FC /* AppController.h */,
+				86A8951616FD8088006DC0FC /* AppController.m */,
+				861102DA171075A500C0C18D /* SHProjectController.h */,
+				861102DB171075A500C0C18D /* SHProjectController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		86A8950E16FD76AB006DC0FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				86A8950F16FD76AB006DC0FC /* Images */,
+				86A8950616F98D00006DC0FC /* NIBs */,
+				86A8951016FD76AB006DC0FC /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		86A8950F16FD76AB006DC0FC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8633EBDD171FEFE300987FF6 /* device_ipad_black@2x.png */,
+				8633EBDE171FEFE500987FF6 /* device_ipad_white@2x.png */,
+				8633EBDF171FEFE600987FF6 /* device_iphone_black_small@2x.png */,
+				8633EBE0171FEFE800987FF6 /* device_iphone_black@2x.png */,
+				8633EBE1171FEFE900987FF6 /* device_iphone_white_small@2x.png */,
+				8633EBE2171FEFEA00987FF6 /* device_iphone_white@2x.png */,
+				8633EBE3171FEFEA00987FF6 /* device_macbook@2x.png */,
+				8633EBE4171FEFEA00987FF6 /* device_reflection_ipad_black@2x.png */,
+				8633EBE5171FEFEA00987FF6 /* device_reflection_ipad_white@2x.png */,
+				8633EBE6171FEFEA00987FF6 /* device_reflection_iphone_black@2x.png */,
+				8633EBE7171FEFEB00987FF6 /* device_reflection_iphone_white@2x.png */,
+				8633EBE8171FEFEB00987FF6 /* device_shadow_ipad@2x.png */,
+				8633EBE9171FEFEB00987FF6 /* device_shadow_iphone@2x.png */,
+				8633EBEA171FEFEC00987FF6 /* device_shadow_macbook@2x.png */,
+				8633EBEB171FEFEC00987FF6 /* glare_ipad_portrait@2x.png */,
+				8633EBEC171FEFEC00987FF6 /* glare_iphone_portrait_small@2x.png */,
+				8633EBED171FEFED00987FF6 /* glare_iphone_portrait@2x.png */,
+				8633EBEE171FEFED00987FF6 /* glare_macbook@2x.png */,
+				8633EBAC171D46C100987FF6 /* Icon.icns */,
+				8633EBA8171C78C900987FF6 /* placeholder_iphone_portrait_small.png */,
+				8633EBA9171C78C900987FF6 /* placeholder_iphone_portrait_small@2x.png */,
+				8633EB9E171C749C00987FF6 /* device_iphone_black_small.png */,
+				8633EB9F171C749C00987FF6 /* device_iphone_white_small.png */,
+				8633EBA0171C749D00987FF6 /* device_reflection_iphone_black_small.png */,
+				8633EBA1171C749E00987FF6 /* device_reflection_iphone_white_small.png */,
+				8633EBA2171C749F00987FF6 /* glare_iphone_portrait_small.png */,
+				8633EB9A171B454E00987FF6 /* placeholder_macbook.png */,
+				8633EB9B171B454E00987FF6 /* placeholder_macbook@2x.png */,
+				8633EB92171B421C00987FF6 /* device_macbook.png */,
+				8633EB94171B421C00987FF6 /* device_shadow_macbook.png */,
+				8633EB95171B421D00987FF6 /* glare_macbook.png */,
+				8633EB8A171B37B800987FF6 /* placeholder_ipad_landscape.png */,
+				8633EB8B171B37B800987FF6 /* placeholder_ipad_landscape@2x.png */,
+				8633EB8C171B37B800987FF6 /* placeholder_ipad_portrait.png */,
+				8633EB8D171B37B800987FF6 /* placeholder_ipad_portrait@2x.png */,
+				8633EB86171B2D8D00987FF6 /* device_ipad_white.png */,
+				8633EB87171B2D8E00987FF6 /* device_reflection_ipad_white.png */,
+				8633EB6A171595DF00987FF6 /* placeholder_iphone_landscape.png */,
+				8633EB6B171595DF00987FF6 /* placeholder_iphone_landscape@2x.png */,
+				8633EB661715928D00987FF6 /* placeholder_iphone_portrait.png */,
+				8633EB68171595D800987FF6 /* placeholder_iphone_portrait@2x.png */,
+				8633EB5217157FC600987FF6 /* device_ipad_black.png */,
+				8633EB5317157FC600987FF6 /* device_iphone_black.png */,
+				8633EB5417157FC600987FF6 /* device_iphone_white.png */,
+				8633EB5517157FC600987FF6 /* device_reflection_ipad_black.png */,
+				8633EB5617157FC600987FF6 /* device_reflection_iphone_black.png */,
+				8633EB5717157FC600987FF6 /* device_reflection_iphone_white.png */,
+				8633EB5817157FC600987FF6 /* glare_ipad_portrait.png */,
+				8633EB5917157FC600987FF6 /* glare_iphone_portrait.png */,
+				8633EB5A17157FC600987FF6 /* device_shadow_ipad.png */,
+				8633EB5B17157FC700987FF6 /* device_shadow_iphone.png */,
+				8633EB4E171473AF00987FF6 /* list_view_shadow_lower.png */,
+				8633EB4F171473AF00987FF6 /* list_view_shadow_lower@2x.png */,
+				8633EB4A1714591300987FF6 /* list_view_shadow_upper.png */,
+				8633EB4B1714591300987FF6 /* list_view_shadow_upper@2x.png */,
+				8633EB481714580D00987FF6 /* hash_bg.png */,
+				8633EB46171455F300987FF6 /* hash_bg@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		86A8951016FD76AB006DC0FC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86A894E216F9879A006DC0FC /* Shelf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86A8950316F9879A006DC0FC /* Build configuration list for PBXNativeTarget "Shelf" */;
+			buildPhases = (
+				86A894DF16F9879A006DC0FC /* Sources */,
+				86A894E016F9879A006DC0FC /* Frameworks */,
+				86A894E116F9879A006DC0FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shelf;
+			productName = Shelf;
+			productReference = 86A894E316F9879A006DC0FC /* Shelf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86A894DB16F9879A006DC0FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Scapehouse;
+			};
+			buildConfigurationList = 86A894DE16F9879A006DC0FC /* Build configuration list for PBXProject "Shelf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 86A894DA16F98799006DC0FC;
+			productRefGroup = 86A894E416F9879A006DC0FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86A894E216F9879A006DC0FC /* Shelf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86A894E116F9879A006DC0FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A894F116F9879A006DC0FC /* InfoPlist.strings in Resources */,
+				86A894F716F9879A006DC0FC /* Credits.rtf in Resources */,
+				86A894FD16F9879A006DC0FC /* MainMenu.xib in Resources */,
+				8611025C1710643900C0C18D /* TemplateProject_iphone.app in Resources */,
+				861102981710655600C0C18D /* TemplateProject_ipad.app in Resources */,
+				861102D41710665100C0C18D /* TemplateProject_universal.app in Resources */,
+				861102D61710667300C0C18D /* TemplateProject_osx.app in Resources */,
+				8633EB47171455F300987FF6 /* hash_bg@2x.png in Resources */,
+				8633EB491714580D00987FF6 /* hash_bg.png in Resources */,
+				8633EB4C1714591300987FF6 /* list_view_shadow_upper.png in Resources */,
+				8633EB4D1714591300987FF6 /* list_view_shadow_upper@2x.png in Resources */,
+				8633EB50171473AF00987FF6 /* list_view_shadow_lower.png in Resources */,
+				8633EB51171473AF00987FF6 /* list_view_shadow_lower@2x.png in Resources */,
+				8633EB5C17157FC700987FF6 /* device_ipad_black.png in Resources */,
+				8633EB5D17157FC700987FF6 /* device_iphone_black.png in Resources */,
+				8633EB5E17157FC700987FF6 /* device_iphone_white.png in Resources */,
+				8633EB5F17157FC700987FF6 /* device_reflection_ipad_black.png in Resources */,
+				8633EB6017157FC700987FF6 /* device_reflection_iphone_black.png in Resources */,
+				8633EB6117157FC700987FF6 /* device_reflection_iphone_white.png in Resources */,
+				8633EB6217157FC700987FF6 /* glare_ipad_portrait.png in Resources */,
+				8633EB6317157FC700987FF6 /* glare_iphone_portrait.png in Resources */,
+				8633EB6417157FC700987FF6 /* device_shadow_ipad.png in Resources */,
+				8633EB6517157FC700987FF6 /* device_shadow_iphone.png in Resources */,
+				8633EB671715928D00987FF6 /* placeholder_iphone_portrait.png in Resources */,
+				8633EB69171595D800987FF6 /* placeholder_iphone_portrait@2x.png in Resources */,
+				8633EB6C171595DF00987FF6 /* placeholder_iphone_landscape.png in Resources */,
+				8633EB6D171595DF00987FF6 /* placeholder_iphone_landscape@2x.png in Resources */,
+				8633EB7F171A617E00987FF6 /* ContainerBoxPrototype.xib in Resources */,
+				8633EB88171B2D8F00987FF6 /* device_ipad_white.png in Resources */,
+				8633EB89171B2D8F00987FF6 /* device_reflection_ipad_white.png in Resources */,
+				8633EB8E171B37B800987FF6 /* placeholder_ipad_landscape.png in Resources */,
+				8633EB8F171B37B800987FF6 /* placeholder_ipad_landscape@2x.png in Resources */,
+				8633EB90171B37B800987FF6 /* placeholder_ipad_portrait.png in Resources */,
+				8633EB91171B37B800987FF6 /* placeholder_ipad_portrait@2x.png in Resources */,
+				8633EB96171B421D00987FF6 /* device_macbook.png in Resources */,
+				8633EB98171B421D00987FF6 /* device_shadow_macbook.png in Resources */,
+				8633EB99171B421D00987FF6 /* glare_macbook.png in Resources */,
+				8633EB9C171B454E00987FF6 /* placeholder_macbook.png in Resources */,
+				8633EB9D171B454E00987FF6 /* placeholder_macbook@2x.png in Resources */,
+				8633EBA3171C74A000987FF6 /* device_iphone_black_small.png in Resources */,
+				8633EBA4171C74A000987FF6 /* device_iphone_white_small.png in Resources */,
+				8633EBA5171C74A000987FF6 /* device_reflection_iphone_black_small.png in Resources */,
+				8633EBA6171C74A000987FF6 /* device_reflection_iphone_white_small.png in Resources */,
+				8633EBA7171C74A000987FF6 /* glare_iphone_portrait_small.png in Resources */,
+				8633EBAA171C78C900987FF6 /* placeholder_iphone_portrait_small.png in Resources */,
+				8633EBAB171C78C900987FF6 /* placeholder_iphone_portrait_small@2x.png in Resources */,
+				8633EBAD171D46C500987FF6 /* Icon.icns in Resources */,
+				8633EBEF171FEFEE00987FF6 /* device_ipad_black@2x.png in Resources */,
+				8633EBF0171FEFEE00987FF6 /* device_ipad_white@2x.png in Resources */,
+				8633EBF1171FEFEE00987FF6 /* device_iphone_black_small@2x.png in Resources */,
+				8633EBF2171FEFEE00987FF6 /* device_iphone_black@2x.png in Resources */,
+				8633EBF3171FEFEE00987FF6 /* device_iphone_white_small@2x.png in Resources */,
+				8633EBF4171FEFEE00987FF6 /* device_iphone_white@2x.png in Resources */,
+				8633EBF5171FEFEE00987FF6 /* device_macbook@2x.png in Resources */,
+				8633EBF6171FEFEE00987FF6 /* device_reflection_ipad_black@2x.png in Resources */,
+				8633EBF7171FEFEE00987FF6 /* device_reflection_ipad_white@2x.png in Resources */,
+				8633EBF8171FEFEE00987FF6 /* device_reflection_iphone_black@2x.png in Resources */,
+				8633EBF9171FEFEE00987FF6 /* device_reflection_iphone_white@2x.png in Resources */,
+				8633EBFA171FEFEE00987FF6 /* device_shadow_ipad@2x.png in Resources */,
+				8633EBFB171FEFEE00987FF6 /* device_shadow_iphone@2x.png in Resources */,
+				8633EBFC171FEFEE00987FF6 /* device_shadow_macbook@2x.png in Resources */,
+				8633EBFD171FEFEE00987FF6 /* glare_ipad_portrait@2x.png in Resources */,
+				8633EBFE171FEFEE00987FF6 /* glare_iphone_portrait_small@2x.png in Resources */,
+				8633EBFF171FEFEE00987FF6 /* glare_iphone_portrait@2x.png in Resources */,
+				8633EC00171FEFEE00987FF6 /* glare_macbook@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86A894DF16F9879A006DC0FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86A894F316F9879A006DC0FC /* main.m in Sources */,
+				86A8950016F9879A006DC0FC /* Shelf.xcdatamodeld in Sources */,
+				86A8951116FD76AB006DC0FC /* AppDelegate.m in Sources */,
+				86A8951416FD76F5006DC0FC /* Project.m in Sources */,
+				86A8951716FD8088006DC0FC /* AppController.m in Sources */,
+				86A8951A16FE0FEF006DC0FC /* SHProjectCollectionView.m in Sources */,
+				86110181170EB77200C0C18D /* SHView.m in Sources */,
+				861102D917106BA900C0C18D /* SHProject.m in Sources */,
+				861102DC171075A500C0C18D /* SHProjectController.m in Sources */,
+				8633EB701717F38200987FF6 /* SHContainerBox.m in Sources */,
+				8633EB761717F71300987FF6 /* SHProjectCollectionViewItem.m in Sources */,
+				8633EB82171A698000987FF6 /* ThinImageView.m in Sources */,
+				8633EB85171A769700987FF6 /* YRKSpinningProgressIndicatorLayer.m in Sources */,
+				8633EBC4171FC3C300987FF6 /* ASIDataCompressor.m in Sources */,
+				8633EBC5171FC3C300987FF6 /* ASIDataDecompressor.m in Sources */,
+				8633EBC6171FC3C300987FF6 /* ASIDownloadCache.m in Sources */,
+				8633EBC7171FC3C300987FF6 /* ASIFormDataRequest.m in Sources */,
+				8633EBC8171FC3C300987FF6 /* ASIHTTPRequest.m in Sources */,
+				8633EBC9171FC3C300987FF6 /* ASIInputStream.m in Sources */,
+				8633EBCA171FC3C300987FF6 /* ASINetworkQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8633EB7D171A617E00987FF6 /* ContainerBoxPrototype.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8633EB7E171A617E00987FF6 /* en */,
+			);
+			name = ContainerBoxPrototype.xib;
+			sourceTree = "<group>";
+		};
+		86A894EF16F9879A006DC0FC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86A894F016F9879A006DC0FC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		86A894F516F9879A006DC0FC /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86A894F616F9879A006DC0FC /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		86A894FB16F9879A006DC0FC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86A894FC16F9879A006DC0FC /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86A8950116F9879A006DC0FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Ali Mahouk (SA6MPMP77M)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "E5E7BEB2-DDE8-4FCB-8D3E-CBF3683EBAFE";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		86A8950216F9879A006DC0FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Ali Mahouk (SA6MPMP77M)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PROVISIONING_PROFILE = "E5E7BEB2-DDE8-4FCB-8D3E-CBF3683EBAFE";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		86A8950416F9879A006DC0FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Shelf/Shelf.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Ali Mahouk (SA6MPMP77M)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shelf/Shelf-Prefix.pch";
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				INFOPLIST_FILE = "Shelf/Shelf-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E5E7BEB2-DDE8-4FCB-8D3E-CBF3683EBAFE";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		86A8950516F9879A006DC0FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = Shelf/Shelf.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Ali Mahouk (SA6MPMP77M)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Shelf/Shelf-Prefix.pch";
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				INFOPLIST_FILE = "Shelf/Shelf-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E5E7BEB2-DDE8-4FCB-8D3E-CBF3683EBAFE";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86A894DE16F9879A006DC0FC /* Build configuration list for PBXProject "Shelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86A8950116F9879A006DC0FC /* Debug */,
+				86A8950216F9879A006DC0FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86A8950316F9879A006DC0FC /* Build configuration list for PBXNativeTarget "Shelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86A8950416F9879A006DC0FC /* Debug */,
+				86A8950516F9879A006DC0FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		86A894FE16F9879A006DC0FC /* Shelf.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				86A894FF16F9879A006DC0FC /* Shelf.xcdatamodel */,
+			);
+			currentVersion = 86A894FF16F9879A006DC0FC /* Shelf.xcdatamodel */;
+			path = Shelf.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 86A894DB16F9879A006DC0FC /* Project object */;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="SHProject" representedClassName="SHProject" syncable="YES">
+        <attribute name="deviceColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectCollectionID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectDateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="projectDateModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="projectFilePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectIcon" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="projectID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectThumbnailImagePath_1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rootDirPath" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SHProject" positionX="160" positionY="192" width="128" height="210"/>
+    </elements>
+</model>
